@@ -1,11 +1,12 @@
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Contact Us</title>
-</head>
-<body>
+<div>
   <h1>contact us</h1>
-</body>
-</html>
+  
+  {{-- without route parameter --}}
+  {{-- <h3>name: {{$name}}</h3>
+  <h3>email: {{$email}}</h3> --}}
+
+  {{-- with route parameter --}}
+  <h3>name: {{request()->name}}</h3>
+  <h3>id: {{request()->id}}</h3>
+
+</div>
